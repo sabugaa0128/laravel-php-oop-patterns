@@ -1,0 +1,23 @@
+[33mcommit 5b76063b9d2bfa36ffc23e846d4f64da5ee15c99[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: unknown <C:\Users\User\AppData\Roaming\The Bat!>
+Date:   Wed Mar 27 05:47:34 2024 +0200
+
+    Created Singleton pattern
+
+[1mdiff --git a/app/DesignPatterns/Creational/Singleton/Singleton.php b/app/DesignPatterns/Creational/Singleton/Singleton.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b3d9bbc[m
+[1m--- /dev/null[m
+[1m+++ b/app/DesignPatterns/Creational/Singleton/Singleton.php[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<?php[m
+[1mdiff --git a/app/Http/Controllers/Patterns/SingletonController.php b/app/Http/Controllers/Patterns/SingletonController.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b3d9bbc[m
+[1m--- /dev/null[m
+[1m+++ b/app/Http/Controllers/Patterns/SingletonController.php[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<?php[m
+[1mdiff --git a/resources/views/patterns/singleton.blade.php b/resources/views/patterns/singleton.blade.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m

@@ -14,6 +14,7 @@ use App\Http\Controllers\PostsController;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -46,3 +47,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/persons', App\Http\Controllers\PersonsController::class)->name('persons');
+
+
+// Patterns routes
+Route::get('/singleton', [App\Http\Controllers\Patterns\SingletonController::class, 'index'])->name('singleton');
