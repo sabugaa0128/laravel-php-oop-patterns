@@ -51,3 +51,5 @@ Route::get('/persons', App\Http\Controllers\PersonsController::class)->name('per
 
 // Patterns routes
 Route::get('/singleton', [App\Http\Controllers\Patterns\SingletonController::class, 'index'])->name('singleton');
+// Patterns routes
+Route::get('/factory', [App\Http\Controllers\Patterns\FactoryController::class, 'index'])->name('factory');

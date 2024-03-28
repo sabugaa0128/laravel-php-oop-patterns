@@ -1,5 +1,7 @@
 <?php
 
+namespace App\DesignPatterns\Creational\Factory;
+
 class Worker {
     private string $name;
 

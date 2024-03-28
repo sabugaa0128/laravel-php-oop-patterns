@@ -25,15 +25,18 @@ class SingletonController extends Controller
      */
     public function index()
     {
-        $objectSigleton = Singleton::getInstance();
-        $objectSigleton::setName("Singleton");
+        $s1 = Singleton::getInstance();
+        $s1::setName("Singleton 1");
 
-        $objectSigleton2 = Singleton::getInstance();
-        $objectSigleton2::getName();
-        $objectSigleton2::setName("Singleton2");
 
-      //  dd($objectSigleton === $objectSigleton2);
-        dd($objectSigleton::getName());
-        return view('patterns/singleton');
+        $s2 = Singleton::getInstance();
+        $s2::getName();
+
+        if ($s1 === $s2) {
+            $result =  "Singleton works, both variables contain the same instance.";
+        } else {
+            $result = "Singleton failed, variables contain different instances.";
+        }
+        return view('patterns/singleton', compact("result"));
     }
 }
