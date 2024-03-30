@@ -53,3 +53,4 @@ Route::get('/persons', App\Http\Controllers\PersonsController::class)->name('per
 Route::get('/singleton', [App\Http\Controllers\Patterns\SingletonController::class, 'index'])->name('singleton');
 Route::get('/factory', [App\Http\Controllers\Patterns\FactoryController::class, 'index'])->name('factory');
 Route::get('/factorymethod', [App\Http\Controllers\Patterns\FactorymethodController::class, 'index'])->name('factorymethod');
+Route::get('/staticfactory', [App\Http\Controllers\Patterns\StaticfactoryController::class, 'index'])->name('staticfactory');

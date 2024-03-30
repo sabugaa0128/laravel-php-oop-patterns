@@ -1,26 +1,20 @@
 <?php
 
 namespace App\DesignPatterns\Creational\Staticfactory;
-use App\DesignPatterns\Creational\Staticfactory\Cars;
-use App\DesignPatterns\Creational\Staticfactory\Trucks;
-
+use InvalidArgumentException;
 
 class TransportFactory
 {
     // Статическая фабрика
-    public static function build($transportName)
+    public static function build($transportName) : ?ITransport
     {
         $className = ucfirst($transportName);
+        $class_path = '\\App\\DesignPatterns\\Creational\\Staticfactory\\' . $className;
 
-
-            var_dump($className);
-            return new $className();
-
-    }
-}
-
-class Carss {
-    public function __construct()
-    {
+        if (class_exists($class_path))
+        {
+            return new $class_path;
+        }
+        throw new InvalidArgumentException("Class: $className does not exist...");
     }
 }
