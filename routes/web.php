@@ -57,3 +57,4 @@ Route::get('/staticfactory', [App\Http\Controllers\Patterns\StaticfactoryControl
 Route::get('/abstractfactory', [App\Http\Controllers\Patterns\AbstractfactoryController::class, 'index'])->name('abstractfactory');
 Route::get('/builder', [App\Http\Controllers\Patterns\BuilderController::class, 'index'])->name('builder');
 Route::get('/prototype', [App\Http\Controllers\Patterns\PrototypeController::class, 'index'])->name('prototype');
+Route::get('/pool', [App\Http\Controllers\Patterns\PoolController::class, 'index'])->name('pool');
