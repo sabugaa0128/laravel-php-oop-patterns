@@ -58,3 +58,4 @@ Route::get('/abstractfactory', [App\Http\Controllers\Patterns\AbstractfactoryCon
 Route::get('/builder', [App\Http\Controllers\Patterns\BuilderController::class, 'index'])->name('builder');
 Route::get('/prototype', [App\Http\Controllers\Patterns\PrototypeController::class, 'index'])->name('prototype');
 Route::get('/pool', [App\Http\Controllers\Patterns\PoolController::class, 'index'])->name('pool');
+Route::get('/dependencyinjection', [App\Http\Controllers\Patterns\DependencyinjectionController::class, 'index'])->name('dependencyinjection');
