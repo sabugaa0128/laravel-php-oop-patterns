@@ -2,7 +2,17 @@
 
 namespace App\DesignPatterns\Structural\Composite;
 
-class APart
+abstract class APart
 {
+    private string $text;
 
+    public function __construct(string $text)
+    {
+        $this->text = $text;
+    }
+
+    public function getText() : string
+    {
+        return $this->text . PHP_EOL;
+    }
 }

@@ -59,3 +59,5 @@ Route::get('/builder', [App\Http\Controllers\Patterns\BuilderController::class, 
 Route::get('/prototype', [App\Http\Controllers\Patterns\PrototypeController::class, 'index'])->name('prototype');
 Route::get('/pool', [App\Http\Controllers\Patterns\PoolController::class, 'index'])->name('pool');
 Route::get('/dependencyinjection', [App\Http\Controllers\Patterns\DependencyinjectionController::class, 'index'])->name('dependencyinjection');
+Route::get('/registry', [App\Http\Controllers\Patterns\RegistryController::class, 'index'])->name('registry');
+Route::get('/composite', [App\Http\Controllers\Patterns\CompositeController::class, 'index'])->name('composite');
